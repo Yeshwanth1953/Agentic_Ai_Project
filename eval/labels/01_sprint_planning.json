@@ -1,0 +1,84 @@
+{
+  "meeting_date": "2026-10-25",
+  "attendees": ["Alex", "Ravi", "Priya", "Sam"],
+  "tasks": [
+    {
+      "title": "Finish the API documentation",
+      "owner": "Ravi Kumar",
+      "due_date": "2026-10-28",
+      "quote": "I'll finish the API documentation by this Wednesday.",
+      "notes": "due_raw='this Wednesday', ref=2026-10-25 (Sunday), resolved to 2026-10-28"
+    },
+    {
+      "title": "Complete auth module pull request reviews",
+      "owner": "Priya Sharma",
+      "due_date": "2026-10-31",
+      "quote": "I'll take care of the auth module pull request reviews by Friday.",
+      "notes": "Duplicate of seeded task 'Review pull requests for auth module' assigned to Priya. DUPLICATE check expected."
+    },
+    {
+      "title": "Finalize the new dashboard design",
+      "owner": "Ravi Kumar",
+      "due_date": "2026-11-01",
+      "quote": "I can have the dashboard design finalized by next Friday.",
+      "notes": "next Friday from 2026-10-25 = 2026-11-01"
+    },
+    {
+      "title": "Write unit tests for the payment module",
+      "owner": "Sam",
+      "due_date": "2026-10-29",
+      "quote": "I'll write the unit tests for the payment module.",
+      "notes": "owner='Sam' is AMBIGUOUS (Sam Johnson + Sam Lee both in people table). AMBIGUOUS_OWNER clarification expected. due_raw='next Wednesday' = 2026-10-29"
+    },
+    {
+      "title": "Send sprint summary deck to stakeholders",
+      "owner": "Alex Chen",
+      "due_date": "2026-10-26",
+      "quote": "I'll prepare and send the sprint summary deck to the stakeholders by end of day tomorrow.",
+      "notes": "Self-commitment. due_raw='tomorrow' = 2026-10-26"
+    },
+    {
+      "title": "Set up staging environment for the payment module",
+      "owner": "Priya Sharma",
+      "due_date": "2026-11-01",
+      "quote": "I can set up the staging environment by end of next week.",
+      "notes": "due_raw='end of next week' should be treated as VAGUE_DEADLINE. Clarification expected."
+    },
+    {
+      "title": "Send calendar invites for the design review sync",
+      "owner": "Priya Sharma",
+      "due_date": null,
+      "quote": "I'll send out the calendar invites for the design review sync.",
+      "notes": "No deadline stated. MISSING_DEADLINE clarification expected."
+    },
+    {
+      "title": "Investigate CI pipeline failures",
+      "owner": null,
+      "due_date": null,
+      "quote": "Someone should look into the CI pipeline failures.",
+      "notes": "No owner, no deadline. MISSING_OWNER + MISSING_DEADLINE. Should trigger clarification."
+    }
+  ],
+  "decisions": [
+    {
+      "text": "The team will hold a design review sync on next Tuesday to review Ravi's dashboard designs before sprint end.",
+      "quote": "The team will hold a design review sync on next Tuesday to review Ravi's dashboard designs before sprint end.",
+      "speaker": "Alex"
+    },
+    {
+      "text": "All sprint deliverables must be completed before the November 5th product demo.",
+      "quote": "All sprint deliverables must be completed before the November 5th product demo.",
+      "speaker": "Alex"
+    }
+  ],
+  "edge_cases_planted": [
+    "AMBIGUOUS_OWNER: 'Sam' matches both Sam Johnson and Sam Lee",
+    "DUPLICATE: Priya's PR review task duplicates seeded open task",
+    "MISSING_OWNER: CI pipeline task has no named owner",
+    "VAGUE_DEADLINE: 'end of next week' should trigger clarification",
+    "MISSING_DEADLINE: calendar invite task has no deadline",
+    "SELF_COMMITMENT: Alex mentions 'I'll prepare and send the sprint summary deck'",
+    "STOP_LABEL: 'Note: This is a critical deliverable' should NOT start new speaker segment",
+    "CALENDAR_EVENT: Decision includes sync meeting -> planner should propose create_event"
+  ]
+}

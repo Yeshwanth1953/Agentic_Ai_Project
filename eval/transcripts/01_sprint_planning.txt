@@ -1,0 +1,51 @@
+Alex: Good morning everyone. Let's get the sprint planning started. Today is October 25th.
+
+Ravi: Morning. Before we begin, can we quickly review what's still open from last sprint?
+
+Alex: Sure. We've got the CI/CD pipeline setup assigned to me — still in progress. Ravi, your API documentation was due Monday.
+
+Ravi: Yeah, I know. I got blocked on the auth module spec. I'll finish the API documentation by this Wednesday.
+
+Alex: Alright. Priya, can you finish the pull request reviews for the auth module by end of week?
+
+Priya: I'll take care of the auth module pull request reviews by Friday.
+
+Alex: Good. Now for this sprint. We need to finalize the new dashboard design. Ravi, you'll own that.
+
+Ravi: Sure, I can have the dashboard design finalized by next Friday.
+
+Alex: Perfect. We also need someone to write the unit tests for the payment module.
+
+Sam: I can do that. I'll write the unit tests for the payment module.
+
+Alex: Thanks Sam. When can you have it done?
+
+Sam: By next Wednesday should work.
+
+Note: This is a critical deliverable for the release.
+
+Alex: Great. Now, the CI issues have been affecting everyone. Someone should look into the CI pipeline failures.
+
+Ravi: I agree, that's been a pain. We should fix it soon.
+
+Alex: Let's also make sure we have a sync meeting to review the dashboard designs before the sprint ends. Let's schedule it for next Tuesday.
+
+Decision: The team will hold a design review sync on next Tuesday to review Ravi's dashboard designs before sprint end.
+
+Priya: I'll send out the calendar invites for the design review sync.
+
+Alex: One more thing — I'll prepare and send the sprint summary deck to the stakeholders by end of day tomorrow.
+
+Ravi: Also, we should set up the staging environment for the new payment module. That's been pending since last sprint.
+
+Alex: Right. Priya, can you set up the staging environment for the payment module?
+
+Priya: Sure, I can set up the staging environment by end of next week.
+
+Alex: Sounds good. Any other items before we close?
+
+Sam: Just a reminder that the product demo is scheduled for November 5th. We should make sure everything is ready by then.
+
+Decision: All sprint deliverables must be completed before the November 5th product demo.
+
+Alex: Absolutely. Let's make sure we're on track. Alright, I think that covers everything. Let's have a great sprint everyone.
